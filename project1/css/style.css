@@ -272,12 +272,12 @@ section>a:hover{
     height: 350px;
     box-shadow:7px 5px 10px #617c97 ;
 } 
-/* .members:first-child{
+.members:first-child{
     margin-left: 2rem;
 }   
 .members:last-child{
     margin-right: 2rem;
-}    */
+}    
 .members img{
     padding: 10px;
     display: flex;
