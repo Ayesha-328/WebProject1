@@ -4,7 +4,9 @@
     box-sizing: border-box;
     color: white;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 .container{
   font-family: 'Titillium Web', sans-serif;
 }
@@ -47,7 +49,7 @@
 }
 #middle ul {
     display: flex;
-    
+    justify-content: center;
 }
 #middle ul li{
     list-style: none;
@@ -265,19 +267,13 @@ section>a:hover{
     grid-template-columns: repeat(4,auto);
     grid-gap: 2rem;
     align-items: center;
-    /* justify-content: center; */
+    padding: 2rem;
 }
 .members{
     /* border: 2px solid black; */
     height: 350px;
     box-shadow:7px 5px 10px #617c97 ;
 } 
-.members:first-child{
-    margin-left: 2rem;
-}   
-.members:last-child{
-    margin-right: 2rem;
-}    
 .members img{
     padding: 10px;
     display: flex;
