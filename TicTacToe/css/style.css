@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+nav{
+    background-color: rgb(51, 18, 51);
+    color: white;
+    height: 60px;
+    font-size: 23px;
+    display: flex;
+    align-items: center;
+    padding: 0px 23px;
+ 
+    font-family: 'Lilita One', cursive;
+}
+body{
+    background: url("../img/bg2.jpg") no-repeat center/cover;
+    height: 100vh;
+}
+
+nav ul{
+    list-style: none;
+}
+.gameContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    position: relative;
+    /* align-items: center; */
+    
+}
+.container{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3,10vw);
+    font-family: 'Varela Round', sans-serif;
+    position: relative;
+}
+.box{
+    border: 1px solid rgb(255, 255, 255);
+    font-size: 5vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box:hover{
+    background-color: rgba(96, 94, 97, 0.616);
+}
+.gameInfo{
+    background-color: rgb(51, 18, 51);
+    margin: 0px 73px;
+    padding: 28px 34px;
+    font-family: 'Lilita One', cursive;
+    border-radius: 10px;
+}
+.imgbox img{
+    display: block;
+    width: 0;
+    transition: width 1s ease-in;
+    border-radius: 10px;
+    margin: auto;
+}
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+#reset{
+    display: block;
+    margin: 12px auto;
+    padding: 7px 34px;
+    background-color: rgb(70, 37, 100);
+    border-radius: 6px;
+    font-size: 1.3rem;
+}
+#reset:hover{
+    cursor: pointer;
+    background-color: rgb(63, 22, 63);
+}
+.info{
+    display: block;
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 12px 0;
+}
+.line{
+    background-color:rgb(51, 18, 51);
+    width: 0;
+    height: 8px;
+    border-radius: 10px;
+    position: absolute;
+    transition: width 1s ease-in-out;   
+}
+@media only screen and (max-width: 600px) {
+    .gameContainer{
+        flex-direction: column;
+    }
+    .container{
+        margin-bottom: 28px;
+    }
+    .line{
+        margin-left: 35vw;
+        margin-top: -5px;
+        height: 4px;
+    }
+    .gameInfo{
+        margin:0px 28px;
+        margin-bottom: 34px;
+    }
+    .gameInfo h1{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .info{
+        font-size: 1.6rem;
+    }
+    #reset{
+        font-size: 14px;
+    }
+}
+@media only screen and (min-width:600px) and (max-width: 850px) {
+    .gameInfo{
+        margin: 0px 40px;
+    }
+}
